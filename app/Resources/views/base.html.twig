@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title>{% block title %}Chanfle Taqueria{% endblock %}</title>        
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/inicio/img/favicon.jpg') }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/inicio/css/bootstrap.css') }}" rel="stylesheet" />
+            <link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
+            <link href='{{ asset('bundles/inicio/css/estilos.css') }}' rel='stylesheet' type='text/css'>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('bundles/inicio/js/jquery.js') }}"></script>
+            <script src="{{ asset('bundles/inicio/js/bootstrap.js') }}"></script>
+            <script src="{{ asset('bundles/inicio/js/script.js') }}"></script>
+        {% endblock %}
     </head>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="container">
+            <div class="masthead">
+                
+                <div align="center">
+                    <img src="{{ asset('bundles/inicio/img/logo.jpg') }}" alt="LogoChanfle" height="200" width="200"/>
+                </div>
+
+                <!-- Navegacion -->
+                <nav class="navbar-default">
+                    <div class="container-fluid">                        
+                        <div class="navbar-header">                            
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <!--<span class="sr-only">Toggle navigation</span>-->
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>                           
+                        </div>
+                        
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav nav-justified">
+                                <li class="active"><a href="{{ path('index') }}">INICIO</a></li>
+                                <li><a href="{{ path('historia') }}">HISTORIA</a></li>
+                                <li><a href="{{ path('contacto') }}">PRODUCTOS</a></li>
+                                <li><a href="{{ path('contacto') }}">CLIENTES</a></li>
+                                <li><a href="{{ path('contacto') }}">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav> <!-- Fin navegacion -->
+                        
+                {% block body %}{% endblock %}  
+                
+            </div> <!-- /masthead /Contenedor Nav y Carrusel --> 
+            
+            <footer class="footer">
+                <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | 
+                    Desarrollado por: <a href="{{ path('historia') }}">GD</a>
+                </p>
+            </footer>
+        </div> <!-- /Container -->
     </body>
 </html>

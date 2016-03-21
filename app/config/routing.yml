@@ -1,1 +1,6 @@
+paginas:
+    resource: "@PaginasBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 
