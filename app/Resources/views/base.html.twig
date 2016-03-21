@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Chanfle Taqueria{% endblock %}</title>        
-        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/inicio/img/favicon.jpg') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/inicio/img/favicon.ico') }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block stylesheets %}
             <link href="{{ asset('bundles/inicio/css/bootstrap.css') }}" rel="stylesheet" />
@@ -41,8 +41,8 @@
                             <ul class="nav nav-justified">
                                 <li class="active"><a href="{{ path('index') }}">INICIO</a></li>
                                 <li><a href="{{ path('historia') }}">HISTORIA</a></li>
-                                <li><a href="{{ path('contacto') }}">PRODUCTOS</a></li>
-                                <li><a href="{{ path('contacto') }}">CLIENTES</a></li>
+                                <li><a href="{{ path('productos') }}">PRODUCTOS</a></li>
+                                <li><a href="{{ path('clientes') }}">CLIENTES</a></li>
                                 <li><a href="{{ path('contacto') }}">CONTACTO</a></li>
                             </ul>
                         </div>
@@ -55,7 +55,7 @@
             
             <footer class="footer">
                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | 
-                    Desarrollado por: <a href="{{ path('historia') }}">GD</a>
+                    Desarrollado por: <a href="{{ path('acercade') }}">GD</a>
                 </p>
             </footer>
         </div> <!-- /Container -->

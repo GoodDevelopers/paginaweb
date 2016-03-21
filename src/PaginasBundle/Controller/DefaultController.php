@@ -24,10 +24,34 @@ class DefaultController extends Controller
     }
     
     /**
+     * @Route("/productos", name="productos")
+     */
+    public function productosAction()
+    {
+        return $this->render('PaginasBundle:Default:productos.html.twig');
+    }
+    
+    /**
+     * @Route("/clientes", name="clientes")
+     */
+    public function clientesAction()
+    {
+        return $this->render('PaginasBundle:Default:clientes.html.twig');
+    }
+    
+    /**
      * @Route("/contacto", name="contacto")
      */
     public function contactoAction()
     {
         return $this->render('PaginasBundle:Default:contacto.html.twig');
+    }
+    
+    /**
+     * @Route("/acercade", name="acercade")
+     */
+    public function acercadeAction()
+    {
+        return $this->render('PaginasBundle:Default:acercade.html.twig');
     }
 }
