@@ -2,18 +2,17 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Chanfle Taqueria{% endblock %}</title>        
-        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/inicio/img/favicon.ico') }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Chanfle Taqueria{% endblock %}</title>        
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/chanfle/img/favicon.ico') }}" />        
         {% block stylesheets %}
-            <link href="{{ asset('bundles/inicio/css/bootstrap.css') }}" rel="stylesheet" />
+            <link href="{{ asset('bundles/chanfle/css/bootstrap.css') }}" rel="stylesheet" />            
+            <link href='{{ asset('bundles/chanfle/css/estilos.css') }}' rel='stylesheet' type='text/css'>
             <link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
-            <link href='{{ asset('bundles/inicio/css/estilos.css') }}' rel='stylesheet' type='text/css'>
         {% endblock %}
         {% block javascripts %}
-            <script src="{{ asset('bundles/inicio/js/jquery.js') }}"></script>
-            <script src="{{ asset('bundles/inicio/js/bootstrap.js') }}"></script>
-            <script src="{{ asset('bundles/inicio/js/script.js') }}"></script>
+            <script src="{{ asset('bundles/chanfle/js/jquery.js') }}"></script>
+            <script src="{{ asset('bundles/chanfle/js/bootstrap.js') }}"></script>            
         {% endblock %}
     </head>
 
@@ -22,7 +21,7 @@
             <div class="masthead">
                 
                 <div align="center">
-                    <img src="{{ asset('bundles/inicio/img/logo.jpg') }}" alt="LogoChanfle" height="200" width="200"/>
+                    <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="200" width="200"/>
                 </div>
 
                 <!-- Navegacion -->

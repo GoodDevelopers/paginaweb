@@ -4,6 +4,7 @@ namespace PaginasBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
@@ -16,7 +17,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/historia", name="historia")
+     * @Route("/historia/", name="historia")
      */
     public function historiaAction()
     {
@@ -24,7 +25,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/productos", name="productos")
+     * @Route("/productos/", name="productos")
      */
     public function productosAction()
     {
@@ -32,7 +33,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/clientes", name="clientes")
+     * @Route("/clientes/", name="clientes")
      */
     public function clientesAction()
     {
@@ -40,7 +41,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/contacto", name="contacto")
+     * @Route("/contacto/", name="contacto")
      */
     public function contactoAction()
     {
@@ -48,10 +49,13 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/acercade", name="acercade")
+     * @Route("/acercade/", name="acercade")
      */
     public function acercadeAction()
     {
         return $this->render('PaginasBundle:Default:acercade.html.twig');
     }
+    
+    
+   
 }
