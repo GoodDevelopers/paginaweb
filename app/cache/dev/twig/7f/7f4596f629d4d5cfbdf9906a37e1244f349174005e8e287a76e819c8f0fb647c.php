@@ -21,20 +21,20 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2d09b732e67714c8d737e412b569c5dc96b2de6702ecd6a85b52912951bc65cc = $this->env->getExtension("native_profiler");
-        $__internal_2d09b732e67714c8d737e412b569c5dc96b2de6702ecd6a85b52912951bc65cc->enter($__internal_2d09b732e67714c8d737e412b569c5dc96b2de6702ecd6a85b52912951bc65cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PaginasBundle:Default:clientes.html.twig"));
+        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179 = $this->env->getExtension("native_profiler");
+        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179->enter($__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PaginasBundle:Default:clientes.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_2d09b732e67714c8d737e412b569c5dc96b2de6702ecd6a85b52912951bc65cc->leave($__internal_2d09b732e67714c8d737e412b569c5dc96b2de6702ecd6a85b52912951bc65cc_prof);
+        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179->leave($__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_067b16beaaea987c63578e1b99f7c212d2f987d5b85b888f29a28c5232b6529f = $this->env->getExtension("native_profiler");
-        $__internal_067b16beaaea987c63578e1b99f7c212d2f987d5b85b888f29a28c5232b6529f->enter($__internal_067b16beaaea987c63578e1b99f7c212d2f987d5b85b888f29a28c5232b6529f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4 = $this->env->getExtension("native_profiler");
+        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4->enter($__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    Clientes
@@ -42,7 +42,7 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
         
         <div class=\"row\">
             
-            
+<!--            
             <div class=\"col-sm-6\">
                 <h3 style=\"text-align: center\">Iniciar Sesion</h3>
                 <form class=\"form-horizontal\">
@@ -64,10 +64,11 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
                         </div>
                     </div>
                 </form>
-            </div>
-
+            </div> 
+-->
             <div class=\"col-sm-6\">
                 <h3 style=\"text-align: center\">Crear Cuenta</h3>
+                
             </div>
 
 
@@ -76,7 +77,7 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
     </div>
 ";
         
-        $__internal_067b16beaaea987c63578e1b99f7c212d2f987d5b85b888f29a28c5232b6529f->leave($__internal_067b16beaaea987c63578e1b99f7c212d2f987d5b85b888f29a28c5232b6529f_prof);
+        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4->leave($__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4_prof);
 
     }
 
@@ -103,7 +104,7 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
 /*         */
 /*         <div class="row">*/
 /*             */
-/*             */
+/* <!--            */
 /*             <div class="col-sm-6">*/
 /*                 <h3 style="text-align: center">Iniciar Sesion</h3>*/
 /*                 <form class="form-horizontal">*/
@@ -125,10 +126,11 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
 /*                         </div>*/
 /*                     </div>*/
 /*                 </form>*/
-/*             </div>*/
-/* */
+/*             </div> */
+/* -->*/
 /*             <div class="col-sm-6">*/
 /*                 <h3 style="text-align: center">Crear Cuenta</h3>*/
+/*                 */
 /*             </div>*/
 /* */
 /* */
