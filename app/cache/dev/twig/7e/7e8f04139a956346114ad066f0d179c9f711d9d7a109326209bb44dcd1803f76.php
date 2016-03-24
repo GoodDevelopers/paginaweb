@@ -19,8 +19,8 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2f9e293a117d152d0d02ccb05cb75f566d8d2509e482bcdfe577890da3d15d77 = $this->env->getExtension("native_profiler");
-        $__internal_2f9e293a117d152d0d02ccb05cb75f566d8d2509e482bcdfe577890da3d15d77->enter($__internal_2f9e293a117d152d0d02ccb05cb75f566d8d2509e482bcdfe577890da3d15d77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471 = $this->env->getExtension("native_profiler");
+        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471->enter($__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -47,18 +47,18 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 
     <body>
         <div class=\"container\">
-            <div class=\"masthead\">
+            <!--<div class=\"masthead\">-->
                 
                 <div align=\"center\">
                     <img src=\"";
         // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/img/logo.jpg"), "html", null, true);
-        echo "\" alt=\"LogoChanfle\" height=\"200\" width=\"200\"/>
+        echo "\" alt=\"LogoChanfle\" height=\"150\" width=\"150\"/>
                 </div>
 
                 <!-- Navegacion -->
                 <nav class=\"navbar-default\">
-                    <div class=\"container-fluid\">                        
+                    <div class=\"container\">                        
                         <div class=\"navbar-header\">                            
                             <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">
                               <!--<span class=\"sr-only\">Toggle navigation</span>-->
@@ -94,18 +94,19 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
                         </div>
                     </div>
                 </nav> <!-- Fin navegacion -->
+                <br>
                         
-                ";
-        // line 51
+                <div class=\"container\">";
+        // line 52
         $this->displayBlock('body', $context, $blocks);
-        echo "  
+        echo "</div>  
                 
-            </div> <!-- /masthead /Contenedor Nav y Carrusel --> 
+            <!--</div>  /masthead /Contenedor Nav y Carrusel --> 
             
             <footer class=\"footer\">
                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | 
                     Desarrollado por: <a href=\"";
-        // line 57
+        // line 58
         echo $this->env->getExtension('routing')->getPath("acercade");
         echo "\">GD</a>
                 </p>
@@ -115,27 +116,27 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 </html>
 ";
         
-        $__internal_2f9e293a117d152d0d02ccb05cb75f566d8d2509e482bcdfe577890da3d15d77->leave($__internal_2f9e293a117d152d0d02ccb05cb75f566d8d2509e482bcdfe577890da3d15d77_prof);
+        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471->leave($__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_cce957dd54c699978ababce6132e30976f447f35986fcf29d1bd72e7aac9457c = $this->env->getExtension("native_profiler");
-        $__internal_cce957dd54c699978ababce6132e30976f447f35986fcf29d1bd72e7aac9457c->enter($__internal_cce957dd54c699978ababce6132e30976f447f35986fcf29d1bd72e7aac9457c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1 = $this->env->getExtension("native_profiler");
+        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1->enter($__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Chanfle Taqueria";
         
-        $__internal_cce957dd54c699978ababce6132e30976f447f35986fcf29d1bd72e7aac9457c->leave($__internal_cce957dd54c699978ababce6132e30976f447f35986fcf29d1bd72e7aac9457c_prof);
+        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1->leave($__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1_prof);
 
     }
 
     // line 8
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_2afeb6885d28cdfa22eb4d273b021b8ef6387bc67023a11aa6518a9faca9841d = $this->env->getExtension("native_profiler");
-        $__internal_2afeb6885d28cdfa22eb4d273b021b8ef6387bc67023a11aa6518a9faca9841d->enter($__internal_2afeb6885d28cdfa22eb4d273b021b8ef6387bc67023a11aa6518a9faca9841d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e = $this->env->getExtension("native_profiler");
+        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e->enter($__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 9
         echo "            <link href=\"";
@@ -148,15 +149,15 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
             <link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
         ";
         
-        $__internal_2afeb6885d28cdfa22eb4d273b021b8ef6387bc67023a11aa6518a9faca9841d->leave($__internal_2afeb6885d28cdfa22eb4d273b021b8ef6387bc67023a11aa6518a9faca9841d_prof);
+        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e->leave($__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e_prof);
 
     }
 
     // line 13
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_f7fd940e9557edc8ed4f9c905fca76f2e9422a7f5a1e57c3f53a8c322d495aa1 = $this->env->getExtension("native_profiler");
-        $__internal_f7fd940e9557edc8ed4f9c905fca76f2e9422a7f5a1e57c3f53a8c322d495aa1->enter($__internal_f7fd940e9557edc8ed4f9c905fca76f2e9422a7f5a1e57c3f53a8c322d495aa1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303 = $this->env->getExtension("native_profiler");
+        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303->enter($__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 14
         echo "            <script src=\"";
@@ -168,18 +169,18 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
         echo "\"></script>            
         ";
         
-        $__internal_f7fd940e9557edc8ed4f9c905fca76f2e9422a7f5a1e57c3f53a8c322d495aa1->leave($__internal_f7fd940e9557edc8ed4f9c905fca76f2e9422a7f5a1e57c3f53a8c322d495aa1_prof);
+        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303->leave($__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303_prof);
 
     }
 
-    // line 51
+    // line 52
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d25029bbd70ec0657a3f1daa6591f9387e393b48e36d92e80ab6f019716d6ac7 = $this->env->getExtension("native_profiler");
-        $__internal_d25029bbd70ec0657a3f1daa6591f9387e393b48e36d92e80ab6f019716d6ac7->enter($__internal_d25029bbd70ec0657a3f1daa6591f9387e393b48e36d92e80ab6f019716d6ac7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082 = $this->env->getExtension("native_profiler");
+        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082->enter($__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_d25029bbd70ec0657a3f1daa6591f9387e393b48e36d92e80ab6f019716d6ac7->leave($__internal_d25029bbd70ec0657a3f1daa6591f9387e393b48e36d92e80ab6f019716d6ac7_prof);
+        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082->leave($__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082_prof);
 
     }
 
@@ -195,7 +196,7 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 
     public function getDebugInfo()
     {
-        return array (  176 => 51,  167 => 15,  162 => 14,  156 => 13,  146 => 10,  141 => 9,  135 => 8,  123 => 6,  109 => 57,  100 => 51,  91 => 45,  87 => 44,  83 => 43,  79 => 42,  75 => 41,  55 => 24,  46 => 17,  43 => 13,  41 => 8,  37 => 7,  33 => 6,  26 => 1,);
+        return array (  177 => 52,  168 => 15,  163 => 14,  157 => 13,  147 => 10,  142 => 9,  136 => 8,  124 => 6,  110 => 58,  101 => 52,  91 => 45,  87 => 44,  83 => 43,  79 => 42,  75 => 41,  55 => 24,  46 => 17,  43 => 13,  41 => 8,  37 => 7,  33 => 6,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -218,15 +219,15 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 /* */
 /*     <body>*/
 /*         <div class="container">*/
-/*             <div class="masthead">*/
+/*             <!--<div class="masthead">-->*/
 /*                 */
 /*                 <div align="center">*/
-/*                     <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="200" width="200"/>*/
+/*                     <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="150" width="150"/>*/
 /*                 </div>*/
 /* */
 /*                 <!-- Navegacion -->*/
 /*                 <nav class="navbar-default">*/
-/*                     <div class="container-fluid">                        */
+/*                     <div class="container">                        */
 /*                         <div class="navbar-header">                            */
 /*                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">*/
 /*                               <!--<span class="sr-only">Toggle navigation</span>-->*/
@@ -247,10 +248,11 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 /*                         </div>*/
 /*                     </div>*/
 /*                 </nav> <!-- Fin navegacion -->*/
+/*                 <br>*/
 /*                         */
-/*                 {% block body %}{% endblock %}  */
+/*                 <div class="container">{% block body %}{% endblock %}</div>  */
 /*                 */
-/*             </div> <!-- /masthead /Contenedor Nav y Carrusel --> */
+/*             <!--</div>  /masthead /Contenedor Nav y Carrusel --> */
 /*             */
 /*             <footer class="footer">*/
 /*                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | */

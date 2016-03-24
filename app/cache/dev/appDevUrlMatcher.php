@@ -105,78 +105,20 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/cliente')) {
-            // ini
-            if (rtrim($pathinfo, '/') === '/cliente') {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_ini;
-                }
-
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'ini');
-                }
-
-                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::iniAction',  '_route' => 'ini',);
+        // ini
+        if (rtrim($pathinfo, '/') === '/cliente') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_ini;
             }
-            not_ini:
 
-            // cliente_index
-            if ($pathinfo === '/cliente/todos-clientes') {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_cliente_index;
-                }
-
-                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::indexAction',  '_route' => 'cliente_index',);
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'ini');
             }
-            not_cliente_index:
 
-            // cliente_new
-            if ($pathinfo === '/cliente/new') {
-                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                    goto not_cliente_new;
-                }
-
-                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::newAction',  '_route' => 'cliente_new',);
-            }
-            not_cliente_new:
-
-            // cliente_show
-            if (preg_match('#^/cliente/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_cliente_show;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'cliente_show')), array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::showAction',));
-            }
-            not_cliente_show:
-
-            // cliente_edit
-            if (preg_match('#^/cliente/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                    goto not_cliente_edit;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'cliente_edit')), array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::editAction',));
-            }
-            not_cliente_edit:
-
-            // cliente_delete
-            if (preg_match('#^/cliente/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                if ($this->context->getMethod() != 'DELETE') {
-                    $allow[] = 'DELETE';
-                    goto not_cliente_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'cliente_delete')), array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::deleteAction',));
-            }
-            not_cliente_delete:
-
+            return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::formularioAction',  '_route' => 'ini',);
         }
+        not_ini:
 
         // index
         if (rtrim($pathinfo, '/') === '') {

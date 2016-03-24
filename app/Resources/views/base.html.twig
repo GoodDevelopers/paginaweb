@@ -18,15 +18,15 @@
 
     <body>
         <div class="container">
-            <div class="masthead">
+            <!--<div class="masthead">-->
                 
                 <div align="center">
-                    <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="200" width="200"/>
+                    <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="150" width="150"/>
                 </div>
 
                 <!-- Navegacion -->
                 <nav class="navbar-default">
-                    <div class="container-fluid">                        
+                    <div class="container">                        
                         <div class="navbar-header">                            
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                               <!--<span class="sr-only">Toggle navigation</span>-->
@@ -47,10 +47,11 @@
                         </div>
                     </div>
                 </nav> <!-- Fin navegacion -->
+                <br>
                         
-                {% block body %}{% endblock %}  
+                <div class="container">{% block body %}{% endblock %}</div>  
                 
-            </div> <!-- /masthead /Contenedor Nav y Carrusel --> 
+            <!--</div>  /masthead /Contenedor Nav y Carrusel --> 
             
             <footer class="footer">
                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | 

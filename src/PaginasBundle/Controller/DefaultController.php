@@ -37,7 +37,7 @@ class DefaultController extends Controller
      */
     public function clientesAction()
     {
-        return $this->render('PaginasBundle:Default:clientes.html.twig');
+        return $this->render('LoginBundle:Default:formulario.html.twig');
     }
     
     /**

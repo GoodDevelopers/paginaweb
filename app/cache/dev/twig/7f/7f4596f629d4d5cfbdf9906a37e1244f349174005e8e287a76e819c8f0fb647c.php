@@ -11,6 +11,7 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
         $this->parent = $this->loadTemplate("base.html.twig", "PaginasBundle:Default:clientes.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
+            'formulario' => array($this, 'block_formulario'),
         );
     }
 
@@ -21,63 +22,49 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179 = $this->env->getExtension("native_profiler");
-        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179->enter($__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PaginasBundle:Default:clientes.html.twig"));
+        $__internal_8f3e25d757cfc3f1a358e81fd68add20547ec0b33e2b20a6ca63ab0a2e1ade11 = $this->env->getExtension("native_profiler");
+        $__internal_8f3e25d757cfc3f1a358e81fd68add20547ec0b33e2b20a6ca63ab0a2e1ade11->enter($__internal_8f3e25d757cfc3f1a358e81fd68add20547ec0b33e2b20a6ca63ab0a2e1ade11_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PaginasBundle:Default:clientes.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179->leave($__internal_e2c6957a15d69e13aa6c0c586027bb0f5feb2fbc24a499c1074bc16f7fe96179_prof);
+        $__internal_8f3e25d757cfc3f1a358e81fd68add20547ec0b33e2b20a6ca63ab0a2e1ade11->leave($__internal_8f3e25d757cfc3f1a358e81fd68add20547ec0b33e2b20a6ca63ab0a2e1ade11_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4 = $this->env->getExtension("native_profiler");
-        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4->enter($__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0ace8f4b71bb10ea10db4f4b81b19acee63790262271a795ce229bd3ce681d17 = $this->env->getExtension("native_profiler");
+        $__internal_0ace8f4b71bb10ea10db4f4b81b19acee63790262271a795ce229bd3ce681d17->enter($__internal_0ace8f4b71bb10ea10db4f4b81b19acee63790262271a795ce229bd3ce681d17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    Clientes
-    <div class=\"container\">
-        
-        <div class=\"row\">
-            
-<!--            
-            <div class=\"col-sm-6\">
-                <h3 style=\"text-align: center\">Iniciar Sesion</h3>
-                <form class=\"form-horizontal\">
-                    <div class=\"form-group\">
-                        <label for=\"inputEmail2\" class=\"col-sm-3 control-label\">Correo</label>
-                        <div class=\"col-sm-9\">
-                            <input type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Correo electronico\">
-                        </div>
-                    </div>
-                    <div class=\"form-group\">
-                        <label for=\"inputPassword3\" class=\"col-sm-3 control-label\">Contraseña</label>
-                        <div class=\"col-sm-9\">
-                            <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\">
-                        </div>
-                    </div>
-                    <div class=\"form-group\">
-                        <div class=\"col-sm-offset-3 col-sm-9\">
-                            <button type=\"submit\" class=\"btn btn-default\">Iniciar Sesion</button>
-                        </div>
-                    </div>
-                </form>
-            </div> 
--->
-            <div class=\"col-sm-6\">
-                <h3 style=\"text-align: center\">Crear Cuenta</h3>
-                
-            </div>
+        echo "    <h2>Clientes</h2>
+
+    <div class=\"container\">  
+
+    ";
+        // line 8
+        $this->displayBlock('formulario', $context, $blocks);
+        // line 9
+        echo "
 
 
+</div>
 
-        </div>
-    </div>
 ";
         
-        $__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4->leave($__internal_736a9249574132f62be5d673c24ffec463e4202ac1051d16313b5c0d599347c4_prof);
+        $__internal_0ace8f4b71bb10ea10db4f4b81b19acee63790262271a795ce229bd3ce681d17->leave($__internal_0ace8f4b71bb10ea10db4f4b81b19acee63790262271a795ce229bd3ce681d17_prof);
+
+    }
+
+    // line 8
+    public function block_formulario($context, array $blocks = array())
+    {
+        $__internal_4bd7ab206c4a64d3acfc4e633d9dc62f3a57a0915e49344f753b8f6e32ca9d30 = $this->env->getExtension("native_profiler");
+        $__internal_4bd7ab206c4a64d3acfc4e633d9dc62f3a57a0915e49344f753b8f6e32ca9d30->enter($__internal_4bd7ab206c4a64d3acfc4e633d9dc62f3a57a0915e49344f753b8f6e32ca9d30_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "formulario"));
+
+        
+        $__internal_4bd7ab206c4a64d3acfc4e633d9dc62f3a57a0915e49344f753b8f6e32ca9d30->leave($__internal_4bd7ab206c4a64d3acfc4e633d9dc62f3a57a0915e49344f753b8f6e32ca9d30_prof);
 
     }
 
@@ -93,48 +80,20 @@ class __TwigTemplate_f83daa95d8ae64a63cd30745587a46224a98452549e30b1f3888e9f8e92
 
     public function getDebugInfo()
     {
-        return array (  40 => 4,  34 => 3,  11 => 1,);
+        return array (  61 => 8,  49 => 9,  47 => 8,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
 /* */
 /* {% block body %}*/
-/*     Clientes*/
-/*     <div class="container">*/
-/*         */
-/*         <div class="row">*/
-/*             */
-/* <!--            */
-/*             <div class="col-sm-6">*/
-/*                 <h3 style="text-align: center">Iniciar Sesion</h3>*/
-/*                 <form class="form-horizontal">*/
-/*                     <div class="form-group">*/
-/*                         <label for="inputEmail2" class="col-sm-3 control-label">Correo</label>*/
-/*                         <div class="col-sm-9">*/
-/*                             <input type="email" class="form-control" id="inputEmail3" placeholder="Correo electronico">*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="form-group">*/
-/*                         <label for="inputPassword3" class="col-sm-3 control-label">Contraseña</label>*/
-/*                         <div class="col-sm-9">*/
-/*                             <input type="password" class="form-control" id="inputPassword3" placeholder="Password">*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="form-group">*/
-/*                         <div class="col-sm-offset-3 col-sm-9">*/
-/*                             <button type="submit" class="btn btn-default">Iniciar Sesion</button>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </form>*/
-/*             </div> */
-/* -->*/
-/*             <div class="col-sm-6">*/
-/*                 <h3 style="text-align: center">Crear Cuenta</h3>*/
-/*                 */
-/*             </div>*/
+/*     <h2>Clientes</h2>*/
+/* */
+/*     <div class="container">  */
+/* */
+/*     {% block formulario %}{% endblock %}*/
 /* */
 /* */
 /* */
-/*         </div>*/
-/*     </div>*/
+/* </div>*/
+/* */
 /* {% endblock %}*/
