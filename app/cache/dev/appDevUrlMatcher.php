@@ -105,20 +105,28 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // ini
-        if (rtrim($pathinfo, '/') === '/cliente') {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not_ini;
+        if (0 === strpos($pathinfo, '/cliente')) {
+            // ini
+            if (rtrim($pathinfo, '/') === '/cliente') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_ini;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'ini');
+                }
+
+                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::formularioAction',  '_route' => 'ini',);
+            }
+            not_ini:
+
+            // infoclfiente
+            if ($pathinfo === '/cliente/infoclfgiente') {
+                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::showAction',  '_route' => 'infoclfiente',);
             }
 
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'ini');
-            }
-
-            return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::formularioAction',  '_route' => 'ini',);
         }
-        not_ini:
 
         // index
         if (rtrim($pathinfo, '/') === '') {
@@ -147,25 +155,40 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::productosAction',  '_route' => 'productos',);
         }
 
-        if (0 === strpos($pathinfo, '/c')) {
-            // clientes
-            if (rtrim($pathinfo, '/') === '/clientes') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'clientes');
-                }
-
-                return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::clientesAction',  '_route' => 'clientes',);
+        // clientes
+        if (rtrim($pathinfo, '/') === '/clientes') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'clientes');
             }
 
-            // contacto
-            if (rtrim($pathinfo, '/') === '/contacto') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'contacto');
-                }
+            return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::clientesAction',  '_route' => 'clientes',);
+        }
 
-                return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::contactoAction',  '_route' => 'contacto',);
+        // login
+        if (rtrim($pathinfo, '/') === '/login') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'login');
             }
 
+            return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::loginAction',  '_route' => 'login',);
+        }
+
+        // infocliente
+        if (rtrim($pathinfo, '/') === '/infocliente') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'infocliente');
+            }
+
+            return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::infoclienteAction',  '_route' => 'infocliente',);
+        }
+
+        // contacto
+        if (rtrim($pathinfo, '/') === '/contacto') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'contacto');
+            }
+
+            return array (  '_controller' => 'PaginasBundle\\Controller\\DefaultController::contactoAction',  '_route' => 'contacto',);
         }
 
         // acercade

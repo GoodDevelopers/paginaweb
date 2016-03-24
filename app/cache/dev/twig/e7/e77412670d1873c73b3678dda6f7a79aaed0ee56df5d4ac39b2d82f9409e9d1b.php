@@ -21,23 +21,50 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c73c1494b4aa532dc5b9f4ecd363f7376063cf26531deb6ebb2f7fcd2fa8db01 = $this->env->getExtension("native_profiler");
-        $__internal_c73c1494b4aa532dc5b9f4ecd363f7376063cf26531deb6ebb2f7fcd2fa8db01->enter($__internal_c73c1494b4aa532dc5b9f4ecd363f7376063cf26531deb6ebb2f7fcd2fa8db01_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LoginBundle:Default:formulario.html.twig"));
+        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c = $this->env->getExtension("native_profiler");
+        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c->enter($__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LoginBundle:Default:formulario.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c73c1494b4aa532dc5b9f4ecd363f7376063cf26531deb6ebb2f7fcd2fa8db01->leave($__internal_c73c1494b4aa532dc5b9f4ecd363f7376063cf26531deb6ebb2f7fcd2fa8db01_prof);
+        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c->leave($__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c_prof);
 
     }
 
     // line 3
     public function block_formulario($context, array $blocks = array())
     {
-        $__internal_5b36af0eb6004ea04dc94ec7d983645a7e5e15f50638000f8349dce6fbeafe7c = $this->env->getExtension("native_profiler");
-        $__internal_5b36af0eb6004ea04dc94ec7d983645a7e5e15f50638000f8349dce6fbeafe7c->enter($__internal_5b36af0eb6004ea04dc94ec7d983645a7e5e15f50638000f8349dce6fbeafe7c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "formulario"));
+        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1 = $this->env->getExtension("native_profiler");
+        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1->enter($__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "formulario"));
 
         // line 4
-        echo "    
+        echo "
+    <form class=\"form-horizontal\" method=\"POST\" action=\"";
+        // line 5
+        echo $this->env->getExtension('routing')->getPath("login");
+        echo "\">
+        <div class=\"form-group\">
+            <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">Email</label>
+            <div class=\"col-sm-10\">
+                <input name=\"correo\" type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\"/>
+            </div>
+        </div>
+        
+        <div class=\"form-group\">
+            <label for=\"inputPassword3\" class=\"col-sm-2 control-label\">Password</label>
+            <div class=\"col-sm-10\">
+                <input name=\"pass\" type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\"/>
+            </div>
+        </div>
+                
+        <div class=\"form-group\">
+            <div class=\"col-sm-offset-2 col-sm-10\">
+                <button type=\"submit\" class=\"btn btn-default\">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+
+
     <!--            
                     <div class=\"col-sm-6\">
                         <h3 style=\"text-align: center\">Iniciar Sesion</h3>
@@ -61,11 +88,11 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
                             </div>
                         </form>
                     </div> 
-        -->
-    
+    -->
+
 ";
         
-        $__internal_5b36af0eb6004ea04dc94ec7d983645a7e5e15f50638000f8349dce6fbeafe7c->leave($__internal_5b36af0eb6004ea04dc94ec7d983645a7e5e15f50638000f8349dce6fbeafe7c_prof);
+        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1->leave($__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1_prof);
 
     }
 
@@ -81,13 +108,37 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
 
     public function getDebugInfo()
     {
-        return array (  40 => 4,  34 => 3,  11 => 1,);
+        return array (  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'PaginasBundle:Default:clientes.html.twig' %}*/
 /* */
 /* {% block formulario %}*/
-/*     */
+/* */
+/*     <form class="form-horizontal" method="POST" action="{{path('login')}}">*/
+/*         <div class="form-group">*/
+/*             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>*/
+/*             <div class="col-sm-10">*/
+/*                 <input name="correo" type="email" class="form-control" id="inputEmail3" placeholder="Email"/>*/
+/*             </div>*/
+/*         </div>*/
+/*         */
+/*         <div class="form-group">*/
+/*             <label for="inputPassword3" class="col-sm-2 control-label">Password</label>*/
+/*             <div class="col-sm-10">*/
+/*                 <input name="pass" type="password" class="form-control" id="inputPassword3" placeholder="Password"/>*/
+/*             </div>*/
+/*         </div>*/
+/*                 */
+/*         <div class="form-group">*/
+/*             <div class="col-sm-offset-2 col-sm-10">*/
+/*                 <button type="submit" class="btn btn-default">Sign in</button>*/
+/*             </div>*/
+/*         </div>*/
+/*     </form>*/
+/* */
+/* */
+/* */
 /*     <!--            */
 /*                     <div class="col-sm-6">*/
 /*                         <h3 style="text-align: center">Iniciar Sesion</h3>*/
@@ -111,6 +162,6 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
 /*                             </div>*/
 /*                         </form>*/
 /*                     </div> */
-/*         -->*/
-/*     */
+/*     -->*/
+/* */
 /* {% endblock %}*/
