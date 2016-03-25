@@ -1,17 +1,41 @@
-a {
-    font-family: 'Cabin', sans-serif;
-    color: #ff9900;
+ul li a {
+    font-family: 'Pacifico', sans-serif;
+    color: #006600;
+    font-size: 1.5em;
 }
 
-p {
+.footer{
     text-align: center;
-    font-family: 'Cabin', sans-serif;
 }
 
-.navbar-default {
-    background-color: #ffffff;
+.nav {
+    background-color: #e68a00;
+}
+.nav-justified {
+    background-color: #e68a00;
 }
 
-#texto-navbar {
-    text-align: left;
+ul li a:hover {    
+    color: #e68a00;
 }
+
+.navbar-default{
+    background-color: #FFFFFF;
+}
+
+.navbar-header{
+    background-color: #e68a00;
+}
+
+.borde-caja{
+    border: 0px solid black;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.justificado{
+    text-align: justify;
+}
+

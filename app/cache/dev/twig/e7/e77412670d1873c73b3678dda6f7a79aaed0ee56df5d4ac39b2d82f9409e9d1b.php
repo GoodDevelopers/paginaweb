@@ -21,78 +21,52 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c = $this->env->getExtension("native_profiler");
-        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c->enter($__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LoginBundle:Default:formulario.html.twig"));
+        $__internal_6457e7ffa04d6fd85bac66f2eb723d20bbe5c133a68bb50588350d0a13f32394 = $this->env->getExtension("native_profiler");
+        $__internal_6457e7ffa04d6fd85bac66f2eb723d20bbe5c133a68bb50588350d0a13f32394->enter($__internal_6457e7ffa04d6fd85bac66f2eb723d20bbe5c133a68bb50588350d0a13f32394_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LoginBundle:Default:formulario.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c->leave($__internal_78ae5a0a0657d26ddd0c4ce76c4aa7044555fe914171dd97ea1e3b808f4a3b4c_prof);
+        $__internal_6457e7ffa04d6fd85bac66f2eb723d20bbe5c133a68bb50588350d0a13f32394->leave($__internal_6457e7ffa04d6fd85bac66f2eb723d20bbe5c133a68bb50588350d0a13f32394_prof);
 
     }
 
     // line 3
     public function block_formulario($context, array $blocks = array())
     {
-        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1 = $this->env->getExtension("native_profiler");
-        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1->enter($__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "formulario"));
+        $__internal_2fb84c25c0c971aaccff0fb5bb0a138fbe790168ef997b7f7564379a4c85aad5 = $this->env->getExtension("native_profiler");
+        $__internal_2fb84c25c0c971aaccff0fb5bb0a138fbe790168ef997b7f7564379a4c85aad5->enter($__internal_2fb84c25c0c971aaccff0fb5bb0a138fbe790168ef997b7f7564379a4c85aad5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "formulario"));
 
         // line 4
-        echo "
-    <form class=\"form-horizontal\" method=\"POST\" action=\"";
-        // line 5
+        echo "    <div class=\"col-sm-6\">
+        <h3>Iniciar Sesion</h3>
+        <form class=\"form-horizontal\" method=\"POST\" action=\"";
+        // line 6
         echo $this->env->getExtension('routing')->getPath("login");
         echo "\">
-        <div class=\"form-group\">
-            <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">Email</label>
-            <div class=\"col-sm-10\">
-                <input name=\"correo\" type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\"/>
+            <div class=\"form-group\">
+                <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">Correo</label>
+                <div class=\"col-sm-10\">
+                    <input name=\"correo\" type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\"/>
+                </div>
             </div>
-        </div>
-        
-        <div class=\"form-group\">
-            <label for=\"inputPassword3\" class=\"col-sm-2 control-label\">Password</label>
-            <div class=\"col-sm-10\">
-                <input name=\"pass\" type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\"/>
+
+            <div class=\"form-group\">
+                <label for=\"inputPassword3\" class=\"col-sm-2 control-label\">Contraseña</label>
+                <div class=\"col-sm-10\">
+                    <input name=\"pass\" type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\"/>
+                </div>
             </div>
-        </div>
-                
-        <div class=\"form-group\">
-            <div class=\"col-sm-offset-2 col-sm-10\">
-                <button type=\"submit\" class=\"btn btn-default\">Sign in</button>
+
+            <div class=\"form-group\">
+                <div class=\"col-sm-offset-2 col-sm-10\">
+                    <button type=\"submit\" class=\"btn btn-default\">Ingresar</button>
+                </div>
             </div>
-        </div>
-    </form>
-
-
-
-    <!--            
-                    <div class=\"col-sm-6\">
-                        <h3 style=\"text-align: center\">Iniciar Sesion</h3>
-                        <form class=\"form-horizontal\">
-                            <div class=\"form-group\">
-                                <label for=\"inputEmail2\" class=\"col-sm-3 control-label\">Correo</label>
-                                <div class=\"col-sm-9\">
-                                    <input type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Correo electronico\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <label for=\"inputPassword3\" class=\"col-sm-3 control-label\">Contraseña</label>
-                                <div class=\"col-sm-9\">
-                                    <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\">
-                                </div>
-                            </div>
-                            <div class=\"form-group\">
-                                <div class=\"col-sm-offset-3 col-sm-9\">
-                                    <button type=\"submit\" class=\"btn btn-default\">Iniciar Sesion</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div> 
-    -->
-
+        </form>
+    </div>
 ";
         
-        $__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1->leave($__internal_55635604a5ce7bafba964597e7adcc6e3fecee439fcf63c975a3fe720a6f6fb1_prof);
+        $__internal_2fb84c25c0c971aaccff0fb5bb0a138fbe790168ef997b7f7564379a4c85aad5->leave($__internal_2fb84c25c0c971aaccff0fb5bb0a138fbe790168ef997b7f7564379a4c85aad5_prof);
 
     }
 
@@ -108,60 +82,34 @@ class __TwigTemplate_da790323c4a41042100cf21dc526b407117606fa85927219133d40b5dc2
 
     public function getDebugInfo()
     {
-        return array (  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'PaginasBundle:Default:clientes.html.twig' %}*/
 /* */
 /* {% block formulario %}*/
-/* */
-/*     <form class="form-horizontal" method="POST" action="{{path('login')}}">*/
-/*         <div class="form-group">*/
-/*             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>*/
-/*             <div class="col-sm-10">*/
-/*                 <input name="correo" type="email" class="form-control" id="inputEmail3" placeholder="Email"/>*/
+/*     <div class="col-sm-6">*/
+/*         <h3>Iniciar Sesion</h3>*/
+/*         <form class="form-horizontal" method="POST" action="{{path('login')}}">*/
+/*             <div class="form-group">*/
+/*                 <label for="inputEmail3" class="col-sm-2 control-label">Correo</label>*/
+/*                 <div class="col-sm-10">*/
+/*                     <input name="correo" type="email" class="form-control" id="inputEmail3" placeholder="Email"/>*/
+/*                 </div>*/
 /*             </div>*/
-/*         </div>*/
-/*         */
-/*         <div class="form-group">*/
-/*             <label for="inputPassword3" class="col-sm-2 control-label">Password</label>*/
-/*             <div class="col-sm-10">*/
-/*                 <input name="pass" type="password" class="form-control" id="inputPassword3" placeholder="Password"/>*/
+/* */
+/*             <div class="form-group">*/
+/*                 <label for="inputPassword3" class="col-sm-2 control-label">Contraseña</label>*/
+/*                 <div class="col-sm-10">*/
+/*                     <input name="pass" type="password" class="form-control" id="inputPassword3" placeholder="Password"/>*/
+/*                 </div>*/
 /*             </div>*/
-/*         </div>*/
-/*                 */
-/*         <div class="form-group">*/
-/*             <div class="col-sm-offset-2 col-sm-10">*/
-/*                 <button type="submit" class="btn btn-default">Sign in</button>*/
+/* */
+/*             <div class="form-group">*/
+/*                 <div class="col-sm-offset-2 col-sm-10">*/
+/*                     <button type="submit" class="btn btn-default">Ingresar</button>*/
+/*                 </div>*/
 /*             </div>*/
-/*         </div>*/
-/*     </form>*/
-/* */
-/* */
-/* */
-/*     <!--            */
-/*                     <div class="col-sm-6">*/
-/*                         <h3 style="text-align: center">Iniciar Sesion</h3>*/
-/*                         <form class="form-horizontal">*/
-/*                             <div class="form-group">*/
-/*                                 <label for="inputEmail2" class="col-sm-3 control-label">Correo</label>*/
-/*                                 <div class="col-sm-9">*/
-/*                                     <input type="email" class="form-control" id="inputEmail3" placeholder="Correo electronico">*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 <label for="inputPassword3" class="col-sm-3 control-label">Contraseña</label>*/
-/*                                 <div class="col-sm-9">*/
-/*                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <div class="form-group">*/
-/*                                 <div class="col-sm-offset-3 col-sm-9">*/
-/*                                     <button type="submit" class="btn btn-default">Iniciar Sesion</button>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                         </form>*/
-/*                     </div> */
-/*     -->*/
-/* */
+/*         </form>*/
+/*     </div>*/
 /* {% endblock %}*/

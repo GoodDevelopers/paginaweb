@@ -105,29 +105,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/cliente')) {
-            // ini
-            if (rtrim($pathinfo, '/') === '/cliente') {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_ini;
-                }
-
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'ini');
-                }
-
-                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::formularioAction',  '_route' => 'ini',);
-            }
-            not_ini:
-
-            // infoclfiente
-            if ($pathinfo === '/cliente/infoclfgiente') {
-                return array (  '_controller' => 'LoginBundle\\Controller\\ClienteController::showAction',  '_route' => 'infoclfiente',);
-            }
-
-        }
-
         // index
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

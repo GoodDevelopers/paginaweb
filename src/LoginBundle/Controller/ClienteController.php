@@ -15,31 +15,28 @@ use LoginBundle\Entity\Cliente;
  */
 class ClienteController extends Controller {
 
-    /**
-     *
-     * @Route("/", name="ini")
-     * @Method("GET")
-     */
-    public function formularioAction() {
-        return $this->render('LoginBundle:Default:formulario.html.twig');
-    }
-
-   
-
-    /**
-     * Finds and displays a Cliente entity.
-     *
-     * @Route("/infoclfgiente", name="infoclfiente")
-     */
-    public function showAction(Request $request) {
-        $session = $request->getSession();
-        if ($session->has("id")) {
-
-            return $this->render('PaginasBundle:Default:historia.html.twig');
-        } else {
-            return $this->render('LoginBundle:Default:formulario.html.twig');
-        }
-    }
+//    /**
+//     *
+//     * @Route("/", name="formulario")
+//     */
+//    public function formularioAction() {
+//        return $this->render('LoginBundle:Default:formulario.html.twig');
+//    }   
+//
+//    /**
+//     * Finds and displays a Cliente entity.
+//     *
+//     * @Route("/infoclfgiente", name="infoclfiente")
+//     */
+//    public function showAction(Request $request) {
+//        $session = $request->getSession();
+//        if ($session->has("id")) {
+//
+//            return $this->render('PaginasBundle:Default:historia.html.twig');
+//        } else {
+//            return $this->render('LoginBundle:Default:formulario.html.twig');
+//        }
+//    }
 
 //    /**
 //     * Lists all Cliente entities.

@@ -19,8 +19,8 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471 = $this->env->getExtension("native_profiler");
-        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471->enter($__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_b29cdad68182faf35b8b76918ba70cfabe9acb51c17d2a56395c2cab79136c50 = $this->env->getExtension("native_profiler");
+        $__internal_b29cdad68182faf35b8b76918ba70cfabe9acb51c17d2a56395c2cab79136c50->enter($__internal_b29cdad68182faf35b8b76918ba70cfabe9acb51c17d2a56395c2cab79136c50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -39,74 +39,71 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
         ";
         // line 8
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 13
+        // line 15
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 17
+        // line 19
         echo "    </head>
 
     <body>
-        <div class=\"container\">
-            <!--<div class=\"masthead\">-->
-                
-                <div align=\"center\">
-                    <img src=\"";
-        // line 24
+        <div class=\"container animated bounce roboto\">
+
+            <div align=\"center\">
+                <img src=\"";
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/img/logo.jpg"), "html", null, true);
         echo "\" alt=\"LogoChanfle\" height=\"150\" width=\"150\"/>
-                </div>
+            </div>
 
-                <!-- Navegacion -->
-                <nav class=\"navbar-default\">
-                    <div class=\"container\">                        
-                        <div class=\"navbar-header\">                            
-                            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">
-                              <!--<span class=\"sr-only\">Toggle navigation</span>-->
-                              <span class=\"icon-bar\"></span>
-                              <span class=\"icon-bar\"></span>
-                              <span class=\"icon-bar\"></span>
-                            </button>                           
-                        </div>
-                        
-                        <div id=\"navbar\" class=\"navbar-collapse collapse\">
-                            <ul class=\"nav nav-justified\">
-                                <li class=\"active\"><a href=\"";
-        // line 41
-        echo $this->env->getExtension('routing')->getPath("index");
-        echo "\">INICIO</a></li>
-                                <li><a href=\"";
-        // line 42
-        echo $this->env->getExtension('routing')->getPath("historia");
-        echo "\">HISTORIA</a></li>
-                                <li><a href=\"";
-        // line 43
-        echo $this->env->getExtension('routing')->getPath("productos");
-        echo "\">PRODUCTOS</a></li>
-                                <li><a href=\"";
-        // line 44
-        echo $this->env->getExtension('routing')->getPath("clientes");
-        echo "\">CLIENTES</a></li>
-                                <li><a href=\"";
-        // line 45
-        echo $this->env->getExtension('routing')->getPath("contacto");
-        echo "\">CONTACTO</a></li>
-                            </ul>
-                        </div>
+            <!-- Navegacion -->
+            <nav class=\"navbar-default\">
+                <div class=\"container\">                     
+                    <div class=\"navbar-header\">                            
+                        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">
+                            <!--<span class=\"sr-only\">Toggle navigation</span>-->
+                            <span class=\"icon-bar\"></span>
+                            <span class=\"icon-bar\"></span>
+                            <span class=\"icon-bar\"></span>
+                        </button>                           
                     </div>
-                </nav> <!-- Fin navegacion -->
-                <br>
-                        
-                <div class=\"container\">";
-        // line 52
+
+                    <div id=\"navbar\" class=\"navbar-collapse collapse\">
+                        <ul class=\"nav nav-justified\">
+                            <li class=\"active\"><a href=\"";
+        // line 42
+        echo $this->env->getExtension('routing')->getPath("index");
+        echo "\">Inicio</a></li>
+                            <li><a  href=\"";
+        // line 43
+        echo $this->env->getExtension('routing')->getPath("historia");
+        echo "\">Historia</a></li>
+                            <li><a  href=\"";
+        // line 44
+        echo $this->env->getExtension('routing')->getPath("productos");
+        echo "\">Productos</a></li>
+                            <li><a  href=\"";
+        // line 45
+        echo $this->env->getExtension('routing')->getPath("clientes");
+        echo "\">Clientes</a></li>
+                            <li><a  href=\"";
+        // line 46
+        echo $this->env->getExtension('routing')->getPath("contacto");
+        echo "\">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <!-- Fin navegacion -->
+            <br>
+
+            <div class=\"container\">";
+        // line 53
         $this->displayBlock('body', $context, $blocks);
         echo "</div>  
-                
-            <!--</div>  /masthead /Contenedor Nav y Carrusel --> 
-            
+
             <footer class=\"footer\">
                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | 
                     Desarrollado por: <a href=\"";
-        // line 58
+        // line 57
         echo $this->env->getExtension('routing')->getPath("acercade");
         echo "\">GD</a>
                 </p>
@@ -116,27 +113,27 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 </html>
 ";
         
-        $__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471->leave($__internal_03656afb4d7e2e782a2ac9cc94e56f98f64f33fdcf27182c3fff1c409711b471_prof);
+        $__internal_b29cdad68182faf35b8b76918ba70cfabe9acb51c17d2a56395c2cab79136c50->leave($__internal_b29cdad68182faf35b8b76918ba70cfabe9acb51c17d2a56395c2cab79136c50_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1 = $this->env->getExtension("native_profiler");
-        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1->enter($__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_08d757b1f56204c0c09c462d9ba71437712c9faefa530d971830bd58f17c3004 = $this->env->getExtension("native_profiler");
+        $__internal_08d757b1f56204c0c09c462d9ba71437712c9faefa530d971830bd58f17c3004->enter($__internal_08d757b1f56204c0c09c462d9ba71437712c9faefa530d971830bd58f17c3004_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Chanfle Taqueria";
         
-        $__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1->leave($__internal_47fecfd0a74aef4b0886f044ad311de26176e38d424c8180ea94b0e7c6b3ffe1_prof);
+        $__internal_08d757b1f56204c0c09c462d9ba71437712c9faefa530d971830bd58f17c3004->leave($__internal_08d757b1f56204c0c09c462d9ba71437712c9faefa530d971830bd58f17c3004_prof);
 
     }
 
     // line 8
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e = $this->env->getExtension("native_profiler");
-        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e->enter($__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_b5dc67b0ed1b735f9bafba696bb20f0fba080eb03eb9444fc5bcb1de35a0ecd5 = $this->env->getExtension("native_profiler");
+        $__internal_b5dc67b0ed1b735f9bafba696bb20f0fba080eb03eb9444fc5bcb1de35a0ecd5->enter($__internal_b5dc67b0ed1b735f9bafba696bb20f0fba080eb03eb9444fc5bcb1de35a0ecd5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 9
         echo "            <link href=\"";
@@ -146,41 +143,46 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
         // line 10
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/css/estilos.css"), "html", null, true);
         echo "' rel='stylesheet' type='text/css'>
-            <link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
+            <link href='";
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/css/animate.css"), "html", null, true);
+        echo "' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         ";
         
-        $__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e->leave($__internal_b959d85f8b30216fb40da1bef098ce2e9a904ba64cd7ae4035461fac4909c26e_prof);
+        $__internal_b5dc67b0ed1b735f9bafba696bb20f0fba080eb03eb9444fc5bcb1de35a0ecd5->leave($__internal_b5dc67b0ed1b735f9bafba696bb20f0fba080eb03eb9444fc5bcb1de35a0ecd5_prof);
 
     }
 
-    // line 13
+    // line 15
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303 = $this->env->getExtension("native_profiler");
-        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303->enter($__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_69facc64beaa8b4a6a47abf1274cb728125f6be077d57b6e2901f7b3ff565d6a = $this->env->getExtension("native_profiler");
+        $__internal_69facc64beaa8b4a6a47abf1274cb728125f6be077d57b6e2901f7b3ff565d6a->enter($__internal_69facc64beaa8b4a6a47abf1274cb728125f6be077d57b6e2901f7b3ff565d6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 14
+        // line 16
         echo "            <script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/js/jquery.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 15
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/chanfle/js/bootstrap.js"), "html", null, true);
         echo "\"></script>            
         ";
         
-        $__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303->leave($__internal_9ce1b053369b1033452ef363bc05f21bc2a9f4240a6d35ac44ee346e99a0d303_prof);
+        $__internal_69facc64beaa8b4a6a47abf1274cb728125f6be077d57b6e2901f7b3ff565d6a->leave($__internal_69facc64beaa8b4a6a47abf1274cb728125f6be077d57b6e2901f7b3ff565d6a_prof);
 
     }
 
-    // line 52
+    // line 53
     public function block_body($context, array $blocks = array())
     {
-        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082 = $this->env->getExtension("native_profiler");
-        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082->enter($__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b6bbfc713466839f261e48252994257149322024bba4d6ab4f444a895d4c5b68 = $this->env->getExtension("native_profiler");
+        $__internal_b6bbfc713466839f261e48252994257149322024bba4d6ab4f444a895d4c5b68->enter($__internal_b6bbfc713466839f261e48252994257149322024bba4d6ab4f444a895d4c5b68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082->leave($__internal_168748bb5769c856e10fbb4402af03865033fbd6a7ed547cb9c735cc1f3a9082_prof);
+        $__internal_b6bbfc713466839f261e48252994257149322024bba4d6ab4f444a895d4c5b68->leave($__internal_b6bbfc713466839f261e48252994257149322024bba4d6ab4f444a895d4c5b68_prof);
 
     }
 
@@ -196,7 +198,7 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 
     public function getDebugInfo()
     {
-        return array (  177 => 52,  168 => 15,  163 => 14,  157 => 13,  147 => 10,  142 => 9,  136 => 8,  124 => 6,  110 => 58,  101 => 52,  91 => 45,  87 => 44,  83 => 43,  79 => 42,  75 => 41,  55 => 24,  46 => 17,  43 => 13,  41 => 8,  37 => 7,  33 => 6,  26 => 1,);
+        return array (  179 => 53,  170 => 17,  165 => 16,  159 => 15,  148 => 11,  144 => 10,  139 => 9,  133 => 8,  121 => 6,  107 => 57,  100 => 53,  90 => 46,  86 => 45,  82 => 44,  78 => 43,  74 => 42,  54 => 25,  46 => 19,  43 => 15,  41 => 8,  37 => 7,  33 => 6,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -209,7 +211,9 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 /*         {% block stylesheets %}*/
 /*             <link href="{{ asset('bundles/chanfle/css/bootstrap.css') }}" rel="stylesheet" />            */
 /*             <link href='{{ asset('bundles/chanfle/css/estilos.css') }}' rel='stylesheet' type='text/css'>*/
-/*             <link href='https://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>*/
+/*             <link href='{{ asset('bundles/chanfle/css/animate.css') }}' rel='stylesheet' type='text/css'>*/
+/*             <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>*/
+/*             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>*/
 /*         {% endblock %}*/
 /*         {% block javascripts %}*/
 /*             <script src="{{ asset('bundles/chanfle/js/jquery.js') }}"></script>*/
@@ -218,42 +222,39 @@ class __TwigTemplate_82fa3829c86bddd88e840ca9f8c463722e64e761c077c57f1e15b0ca9d8
 /*     </head>*/
 /* */
 /*     <body>*/
-/*         <div class="container">*/
-/*             <!--<div class="masthead">-->*/
-/*                 */
-/*                 <div align="center">*/
-/*                     <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="150" width="150"/>*/
-/*                 </div>*/
+/*         <div class="container animated bounce roboto">*/
 /* */
-/*                 <!-- Navegacion -->*/
-/*                 <nav class="navbar-default">*/
-/*                     <div class="container">                        */
-/*                         <div class="navbar-header">                            */
-/*                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">*/
-/*                               <!--<span class="sr-only">Toggle navigation</span>-->*/
-/*                               <span class="icon-bar"></span>*/
-/*                               <span class="icon-bar"></span>*/
-/*                               <span class="icon-bar"></span>*/
-/*                             </button>                           */
-/*                         </div>*/
-/*                         */
-/*                         <div id="navbar" class="navbar-collapse collapse">*/
-/*                             <ul class="nav nav-justified">*/
-/*                                 <li class="active"><a href="{{ path('index') }}">INICIO</a></li>*/
-/*                                 <li><a href="{{ path('historia') }}">HISTORIA</a></li>*/
-/*                                 <li><a href="{{ path('productos') }}">PRODUCTOS</a></li>*/
-/*                                 <li><a href="{{ path('clientes') }}">CLIENTES</a></li>*/
-/*                                 <li><a href="{{ path('contacto') }}">CONTACTO</a></li>*/
-/*                             </ul>*/
-/*                         </div>*/
+/*             <div align="center">*/
+/*                 <img src="{{ asset('bundles/chanfle/img/logo.jpg') }}" alt="LogoChanfle" height="150" width="150"/>*/
+/*             </div>*/
+/* */
+/*             <!-- Navegacion -->*/
+/*             <nav class="navbar-default">*/
+/*                 <div class="container">                     */
+/*                     <div class="navbar-header">                            */
+/*                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">*/
+/*                             <!--<span class="sr-only">Toggle navigation</span>-->*/
+/*                             <span class="icon-bar"></span>*/
+/*                             <span class="icon-bar"></span>*/
+/*                             <span class="icon-bar"></span>*/
+/*                         </button>                           */
 /*                     </div>*/
-/*                 </nav> <!-- Fin navegacion -->*/
-/*                 <br>*/
-/*                         */
-/*                 <div class="container">{% block body %}{% endblock %}</div>  */
-/*                 */
-/*             <!--</div>  /masthead /Contenedor Nav y Carrusel --> */
-/*             */
+/* */
+/*                     <div id="navbar" class="navbar-collapse collapse">*/
+/*                         <ul class="nav nav-justified">*/
+/*                             <li class="active"><a href="{{ path('index') }}">Inicio</a></li>*/
+/*                             <li><a  href="{{ path('historia') }}">Historia</a></li>*/
+/*                             <li><a  href="{{ path('productos') }}">Productos</a></li>*/
+/*                             <li><a  href="{{ path('clientes') }}">Clientes</a></li>*/
+/*                             <li><a  href="{{ path('contacto') }}">Contacto</a></li>*/
+/*                         </ul>*/
+/*                     </div>*/
+/*                 </div>*/
+/*             </nav> <!-- Fin navegacion -->*/
+/*             <br>*/
+/* */
+/*             <div class="container">{% block body %}{% endblock %}</div>  */
+/* */
 /*             <footer class="footer">*/
 /*                 <p>&copy; 2016 Chanfle Taqueria. Palmira (Colombia) | */
 /*                     Desarrollado por: <a href="{{ path('acercade') }}">GD</a>*/

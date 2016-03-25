@@ -36,8 +36,12 @@ class DefaultController extends Controller
     /**
      * @Route("/clientes/", name="clientes")
      */
-    public function clientesAction()
+    public function clientesAction(Request $request)
     {
+        $session = $request->getSession();
+        if ($session->has("id")) {
+            return $this->redirectToRoute("infocliente");
+        }
         return $this->render('LoginBundle:Default:formulario.html.twig');
     }
     
@@ -80,7 +84,6 @@ class DefaultController extends Controller
             return $this->render('LoginBundle:Default:formulario.html.twig');
         }
     }
-
 
     /**
      * @Route("/contacto/", name="contacto")

@@ -1,15 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h2>Clientes</h2>
-
-    <div class="container">  
-
-    {% block formulario %}{% endblock %}
-    {% block infocliente %}{% endblock %}
-
-
-
-</div>
-
+    <div class="container-fluid">
+        <h2>Clientes</h2>
+            {% block formulario %}{% endblock %}
+            {% block infocliente %}{% endblock %}
+    </div>
 {% endblock %}
