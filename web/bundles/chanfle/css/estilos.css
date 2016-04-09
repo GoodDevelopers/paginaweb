@@ -1,3 +1,20 @@
+/**{
+    color: black;
+}*/
+
+h2{
+    margin-top: 0px;
+}
+
+h2, h3{
+    font-weight: bold;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
 ul li a {
     font-family: 'Pacifico', sans-serif;
     color: #006600;
@@ -38,4 +55,25 @@ ul li a:hover {
 .justificado{
     text-align: justify;
 }
+/*Arias*/
+body{
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
+.container{
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+@media (min-width: 768px){
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
